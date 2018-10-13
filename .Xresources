@@ -1,0 +1,60 @@
+! Colors
+
+! special
+*.foreground:   #e3e0e0
+*.background:   #020b14
+*.cursorColor:  #e3e0e0
+
+! black
+*.color0:       #000000
+*.color8:       #000000
+
+! red
+*.color1:       #de7a82
+*.color9:       #de7a82
+
+! green
+*.color2:       #69ac5a
+*.color10:      #69ac5a
+
+! yellow
+*.color3:       #c1cf78
+*.color11:      #c1cf78
+
+! blue
+*.color4:       #2844ab
+*.color12:      #2844ab
+
+! magenta
+*.color5:       #e31a42
+*.color13:      #e31a42
+
+! cyan
+*.color6:       #44b5b1
+*.color14:      #44b5b1
+
+! white
+*.color7:       #e3e0e0
+*.color15:      #e3e0e0
+
+! Scrollbar disable
+URxvt*scrollBar:  false
+
+!Fonts
+URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=false
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=false
+
+! Perl Extensions
+!URxvt.perl-ext-common: font-size
+!URxvt.keysym.C-Up:     perl:font-size:increase
+!URxvt.keysym.C-Down:   perl:font-size:decrease
+!URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+!URxvt.keysym.C-S-Down: perl:font-size:decglobal
+!URxvt.keysym.C-equal:  perl:font-size:reset
+!URxvt.keysym.C-slash:  perl:font-size:show
+
+URxvt.depth: 32
+URxvt.background: [80]#000000
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
