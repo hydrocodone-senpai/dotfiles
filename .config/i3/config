@@ -197,7 +197,5 @@ bindsym $mod+q exec --no-startup-id qutebrowser
 
 # Startup commands (move to .xinitrc later)
 exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
-exec_always --no-startup-id compton -b -D2
-exec_always --no-startup-id xbindkeys -p
 exec_always --no-startup-id xss-lock -- i3lock -n -i ~/Pictures/reactions/thonklock.png -u -c 000000
 exec_always --no-startup-id syncthing -no-browser
