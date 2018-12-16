@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: pause
-current: 199
-time: 2945.255000
+current: 174
+time: 300.403000
 random: 0
 repeat: 0
 single: 0
@@ -211,10 +211,80 @@ playlist_begin
 196:Pink_Floyd-Wish_You_Were_Here/3.Have_A_Cigar.flac
 197:Pink_Floyd-Wish_You_Were_Here/4.Wish_You_Were_Here.flac
 198:Pink_Floyd-Wish_You_Were_Here/5.Shine_On_You_Crazy_Diamond_(Parts_VI-IX).flac
-199:YT-DL/Aphex Twin - Selected Ambient Works 85-92.m4a
-200:YT-DL/Coaltar of the Deepers - Dear Future.m4a
-201:YT-DL/Echoes.m4a
-202:YT-DL/Fleetwood Mac -- Dreams.opus
-203:YT-DL/Mass Of Fermenting Dregs  -- ワールドイズユアーズ.m4a
-204:YT-DL/The Chain (Remastered Version).m4a
+199:Weezer - Blue Album/01 My Name Is Jonas.mp3
+200:Weezer - Blue Album/02 No One Else.mp3
+201:Weezer - Blue Album/03 The World Has Turned and Left Me Here.mp3
+202:Weezer - Blue Album/04 Buddy Holly.mp3
+203:Weezer - Blue Album/05 Undone -- The Sweater Song.mp3
+204:Weezer - Blue Album/06 Surf Wax America.mp3
+205:Weezer - Blue Album/07 Say It Ain't So.mp3
+206:Weezer - Blue Album/08 In the Garage.mp3
+207:Weezer - Blue Album/09 Holiday.mp3
+208:Weezer - Blue Album/10 Only in Dreams.mp3
+209:Weezer - Blue Album/01 Mykel and Carli.mp3
+210:Weezer - Blue Album/02 Susanne.mp3
+211:Weezer - Blue Album/03 My Evaline.mp3
+212:Weezer - Blue Album/04 Jamie [Live].mp3
+213:Weezer - Blue Album/05 My Name Is Jonas [Live].mp3
+214:Weezer - Blue Album/06 Surf Wax America [Live].mp3
+215:Weezer - Blue Album/07 Jamie [Acoustic][Live].mp3
+216:Weezer - Blue Album/08 No One Else [Acoustic][Live].mp3
+217:Weezer - Blue Album/09 Undone -- The Sweater Song [#][Demo Version].mp3
+218:Weezer - Blue Album/10 Paperface [#][Demo Version].mp3
+219:Weezer - Blue Album/11 Only in Dreams [#][Demo Version].mp3
+220:Weezer - Blue Album/12 Lullaby for Wayne [#].mp3
+221:Weezer - Blue Album/13 I Swear It's True [#].mp3
+222:Weezer - Blue Album/14 Say It Ain't So [Original Album Mix].mp3
+223:Weezer - Pinkerton (Deluxe Edition)/101-weezer-tired_of_sex.mp3
+224:Weezer - Pinkerton (Deluxe Edition)/102-weezer-getchoo.mp3
+225:Weezer - Pinkerton (Deluxe Edition)/103-weezer-no_other_one.mp3
+226:Weezer - Pinkerton (Deluxe Edition)/104-weezer-why_bother.mp3
+227:Weezer - Pinkerton (Deluxe Edition)/105-weezer-across_the_sea.mp3
+228:Weezer - Pinkerton (Deluxe Edition)/106-weezer-the_good_life.mp3
+229:Weezer - Pinkerton (Deluxe Edition)/107-weezer-el_scorcho.mp3
+230:Weezer - Pinkerton (Deluxe Edition)/108-weezer-pink_triangle.mp3
+231:Weezer - Pinkerton (Deluxe Edition)/109-weezer-falling_for_you.mp3
+232:Weezer - Pinkerton (Deluxe Edition)/110-weezer-butterfly.mp3
+233:Weezer - Pinkerton (Deluxe Edition)/111-weezer-you_gave_your_love_to_me_softly.mp3
+234:Weezer - Pinkerton (Deluxe Edition)/112-weezer-devotion.mp3
+235:Weezer - Pinkerton (Deluxe Edition)/113-weezer-the_good_life_(radio_remix).mp3
+236:Weezer - Pinkerton (Deluxe Edition)/114-weezer-waiting_on_you.mp3
+237:Weezer - Pinkerton (Deluxe Edition)/115-weezer-i_just_threw_out_the_love_of_my_dreams.mp3
+238:Weezer - Pinkerton (Deluxe Edition)/116-weezer-the_good_life_(live_and_acoustic).mp3
+239:Weezer - Pinkerton (Deluxe Edition)/117-weezer-pink_triangle_(radio_remix).mp3
+240:Weezer - Pinkerton (Deluxe Edition)/118-weezer-i_swear_its_true.mp3
+241:Weezer - Pinkerton (Deluxe Edition)/119-weezer-pink_triangle_(_live_and_acoustic).mp3
+242:Weezer - Pinkerton (Deluxe Edition)/120-weezer-bonus.mp3
+243:Weezer - Pinkerton (Deluxe Edition)/201-weezer-you_wont_get_with_me_tonight.mp3
+244:Weezer - Pinkerton (Deluxe Edition)/202-weezer-the_good_life_(live_at_y100_sonic_session).mp3
+245:Weezer - Pinkerton (Deluxe Edition)/203-weezer-el_scorcho_(live_at_y100_sonic_session).mp3
+246:Weezer - Pinkerton (Deluxe Edition)/204-weezer-pink_triangle_(live_at_y100_sonic_session).mp3
+247:Weezer - Pinkerton (Deluxe Edition)/205-weezer-why_bother_(live_at_reading_festival_1996).mp3
+248:Weezer - Pinkerton (Deluxe Edition)/206-weezer-el_scorcho_(live_at_reading_festival_1996).mp3
+249:Weezer - Pinkerton (Deluxe Edition)/207-weezer-pink_triangle_(live_at_reading_festival_1996).mp3
+250:Weezer - Pinkerton (Deluxe Edition)/208-weezer-the_good_life_(live_at_x96).mp3
+251:Weezer - Pinkerton (Deluxe Edition)/209-weezer-el_scorcho_(live_and_acoustic).mp3
+252:Weezer - Pinkerton (Deluxe Edition)/210-weezer-across_the_sea_piano_noodles.mp3
+253:Weezer - Pinkerton (Deluxe Edition)/211-weezer-butterfly_(alternate_take).mp3
+254:Weezer - Pinkerton (Deluxe Edition)/212-weezer-long_time_sunshine.mp3
+255:Weezer - Pinkerton (Deluxe Edition)/213-weezer-getting_up_and_leaving.mp3
+256:Weezer - Pinkerton (Deluxe Edition)/214-weezer-tired_of_sex_(tracking_rough).mp3
+257:Weezer - Pinkerton (Deluxe Edition)/215-weezer-getchoo_(tracking_rough).mp3
+258:Weezer - Pinkerton (Deluxe Edition)/216-weezer-tragic_girl.mp3
+259:YT-DL/Aphex Twin - Selected Ambient Works 85-92.m4a
+260:YT-DL/Coaltar of the Deepers - Dear Future.m4a
+261:YT-DL/Echoes.m4a
+262:YT-DL/Fleetwood Mac -- Dreams.opus
+263:YT-DL/Mass Of Fermenting Dregs  -- ワールドイズユアーズ.m4a
+264:YT-DL/The Chain (Remastered Version).m4a
+265:NewPipe/Another One Bites The Dust (Digital Remaster).m4a
+266:NewPipe/Awaken.m4a
+267:NewPipe/Burnin_ for You.m4a
+268:NewPipe/Coaltar of the Deepers - Yukari Telepath (Full Album HQ).m4a
+269:NewPipe/Danzig - Mother HQ.m4a
+270:NewPipe/Godzilla.m4a
+271:NewPipe/hydrogen.opus
+272:NewPipe/Judas Priest -  Firepower "FULL ALBUM" HQ _ HD.m4a
+273:NewPipe/R.E.M. - "Superman".m4a
+274:NewPipe/Stranglehold.m4a
 playlist_end

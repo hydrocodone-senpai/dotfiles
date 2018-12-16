@@ -67,7 +67,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation ($mod + Alt)
-bindsym $mod+Mod1+c split h
+bindsym $mod+Mod1+h split h
 
 # split in vertical orientation ($mod + Alt)
 bindsym $mod+Mod1+v split v
@@ -182,11 +182,11 @@ hide_edge_borders smart
 
 # Shortcuts
 bindsym $mod+q exec --no-startup-id qutebrowser
-bindsym $mod+Shift+w exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
+bindsym $mod+Shift+w exec --no-startup-id feh --randomize --bg-fill ~/Images/wallpapers/*
 
 # Screenshots
-bindsym --release Print exec --no-startup-id scrot -s '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Pictures/screenshots/' && copyq copy image/png - < ~/Pictures/screenshots/$(ls -t ~/Pictures/screenshots/ | head -1)
-bindsym --release Shift+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Pictures/screenshots/' && copyq copy image/png - < ~/Pictures/screenshots/$(ls -t ~/Pictures/screenshots/ | head -1)
+bindsym --release Print exec --no-startup-id scrot -s '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/' && copyq copy image/png - < ~/Images/screenshots/$(ls -t ~/Images/screenshots/ | head -1)
+bindsym --release Shift+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/' && copyq copy image/png - < ~/Images/screenshots/$(ls -t ~/Images/screenshots/ | head -1)
 
 # Startup commands (move to .xinitrc)
 
