@@ -170,32 +170,29 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-}
-
-# Volume control via alsamixer
-
 #bindsym $mod+F11 exec brightness + DVI-D-0
 #bindsym $mod+F10 exec brightness - DVI-D-0
 
 # i3-gaps
 for_window [class="^.*"] border pixel 2
 client.focused  #44b5b1 #44b5b1 #44b5b1 #44b5b1 #44b5b1 #44b5b1
-
 gaps inner 20
 gaps outer 0
+hide_edge_borders smart
 
-# Screenshots command
-bindsym --release Print exec --no-startup-id import ~/Pictures/screenshots/$(date '+%Y%m%d-%H%M%S').png
-bindsym --release Shift+Print exec --no-startup-id import -window root ~/Pictures/screenshots/$(date '+%Y%m%d-%H%M%S').png
-
-#QTB shortcut
+# Shortcuts
 bindsym $mod+q exec --no-startup-id qutebrowser
+bindsym $mod+Shift+w exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
 
-# Startup commands (move to .xinitrc later)
-exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
-exec_always --no-startup-id xss-lock -- i3lock -n -i ~/Pictures/reactions/thonklock.png -u -c 000000
-exec_always --no-startup-id syncthing -no-browser
+# Screenshots
+bindsym --release Print exec --no-startup-id scrot -s '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Pictures/screenshots/' && copyq copy image/png - < ~/Pictures/screenshots/$(ls -t ~/Pictures/screenshots/ | head -1)
+bindsym --release Shift+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Pictures/screenshots/' && copyq copy image/png - < ~/Pictures/screenshots/$(ls -t ~/Pictures/screenshots/ | head -1)
+
+# Startup commands (move to .xinitrc)
+
+# i3bar config
+bar {
+        status_command i3status
+	mode hide
+	font pango:DejaVu Sans Mono 9
+}

@@ -41,8 +41,7 @@
 URxvt*scrollBar:  false
 
 !Fonts
-URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=false
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=false
+URxvt.font:     xft:dejavu sans mono:size=12:antialias=false
 
 ! Perl Extensions
 !URxvt.perl-ext-common: font-size
