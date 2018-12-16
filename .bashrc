@@ -31,6 +31,8 @@ alias n="ncmpcpp"
 alias mkd="mkdir -pv"
 alias neofetch="clear && neofetch"
 alias yt="youtube-viewer"
+alias ypush="yadm commit -a && yadm push"
+alias ypull="yadm clone https://github.com/hydrocodone-senpai/dotfiles && yadm status"
 
 if [ "$EUID" -ne 0 ]
 	then export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 5)\] \\$ \[$(tput sgr0)\]"
