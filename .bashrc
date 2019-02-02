@@ -34,9 +34,8 @@ alias ka="killall"
 alias mkd="mkdir -pv"
 alias abcde="cd ~/Music && abcde -o flac -B"
 
-# yadm aliases (need to manage device-specific files)
-# alias ypush="yadm commit -a && yadm push"
-# alias ypull="yadm clone https://github.com/hydrocodone-senpai/dotfiles -f && yadm status"
+alias ypush="yadm commit -a && yadm push"
+alias ypull="yadm clone https://github.com/hydrocodone-senpai/dotfiles -f && yadm status"
 
 # Application aliases
 alias v="vim"
