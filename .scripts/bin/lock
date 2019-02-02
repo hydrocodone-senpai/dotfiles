@@ -1,0 +1,31 @@
+#!/bin/bash
+# Dependency: i3lock-color (AUR)
+# Lock script -- meant to be executed by xss-lock during suspend or screensave.
+
+i3lock \
+-i "/home/hydrocodone/.scripts/i3lock.png" \
+-k \
+--force-clock \
+--indicator \
+--ringcolor=00000000 \
+--ringwrongcolor=e31616ff \
+--insidecolor=00000000 \
+--insidevercolor=00000000 \
+--insidewrongcolor=00000000 \
+--keyhlcolor=ffffffff \
+--veriftext="" \
+--wrongtext="" \
+--noinputtext="" \
+--locktext="" \
+--lockfailedtext="" \
+--timecolor=ffffffff \
+--datecolor=ffffffff \
+--datestr="%B %d, %Y" \
+--timepos="x+w-100:y+h-40" \
+--datepos="x+w-100:y+h-15" \
+--timesize=40 \
+--datesize=14 \
+--indpos="x+w-225:y+h-40" \
+--radius=25 \
+--ring-width=5 \
+--linecolor=ffffffff
