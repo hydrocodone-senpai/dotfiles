@@ -1,0 +1,12 @@
+bf	~/.bmfiles
+bd	~/.bmdirs
+cb	~/.bashrc
+cz	~/.zshrc
+cv	~/.vimrc
+cr	~/.config/ranger/rc.conf
+ci	~/.config/i3/config
+cn	~/.ncmpcpp/config
+ct	~/.builds/st-larbs/config.h
+cf	~/.builds/surf-100918/config.h
+cs	~/.surf/styles/default.css
+ch	~/.config/startpage/startpage.html

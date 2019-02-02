@@ -4,7 +4,7 @@ compass https://compass2g.illinois.edu/webapps/portal/execute/tabs/tabAction?tab
 phys225 https://courses.physics.illinois.edu/phys225/fa2018/
 webassign https://www.webassign.net/uiuc/login.html
 loncapa https://access1.lon-capa.uiuc.edu/adm/roles?source=login
-gmail https://mail.google.com/mail/u/1/#inbox
+gmail https://mail.google.com/mail/u/0/
 st http://127.0.0.1:8384/
 packback https://questions.packback.co/my-communities/view/current-communities
 handshake http://handshake.illinois.edu/
@@ -14,7 +14,12 @@ restore http://cuhabitat.org/re-store/
 selfservice https://apps.uillinois.edu/selfservice/
 specchem http://catalog.illinois.edu/undergraduate/las/academic-units/chemistry/specialized-curriculum-chemistry-major/
 apps https://wiki.archlinux.org/index.php/List_of_applications
-discord https://discordapp.com/channels/@me
-f https://duckduckgo.com/?q=formula+for+ac+emg&ia=web
 honorsport https://my.atlas.illinois.edu/login.asp?/james-scholar/index.asp
 youtube https://www.youtube.com/
+applist https://wiki.archlinux.org/index.php/List_of_applications
+netmath https://courseware.illinois.edu/#Student
+maxima http://maxima.sourceforge.net/docs/manual/maxima_1.html#SEC1
+discord https://discordapp.com/channels/@me
+mimetypes https://www.sitepoint.com/mime-types-complete-list/
+surf https://surf.suckless.org/
+courses https://courses.illinois.edu/

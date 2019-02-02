@@ -1,4 +1,12 @@
-
 [Default Applications]
 pdf=zathura.desktop
 application/pdf=zathura.desktop
+text/html=surf.desktop
+image/png=feh.desktop
+image/jpeg=feh.desktop
+image/jpg=feh.desktop
+image/gif=mpvgif.desktop
+x-scheme-handler/http=surf.desktop
+x-scheme-handler/https=surf.desktop
+x-scheme-handler/about=surf.desktop
+x-scheme-handler/unknown=surf.desktop

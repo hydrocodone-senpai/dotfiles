@@ -1,9 +1,5 @@
 ! Colors
 
-! special
-*.foreground:   #e3e0e0
-*.background:   #020b14
-*.cursorColor:  #e3e0e0
 
 ! black
 *.color0:       #000000
@@ -37,23 +33,13 @@
 *.color7:       #e3e0e0
 *.color15:      #e3e0e0
 
+URxvt*depth: 32
+URxvt*background: [90]#000000
+*.alpha: 230
+
 ! Scrollbar disable
 URxvt*scrollBar:  false
 
 !Fonts
-URxvt.font:     xft:dejavu sans mono:size=12:antialias=false
-
-! Perl Extensions
-!URxvt.perl-ext-common: font-size
-!URxvt.keysym.C-Up:     perl:font-size:increase
-!URxvt.keysym.C-Down:   perl:font-size:decrease
-!URxvt.keysym.C-S-Up:   perl:font-size:incglobal
-!URxvt.keysym.C-S-Down: perl:font-size:decglobal
-!URxvt.keysym.C-equal:  perl:font-size:reset
-!URxvt.keysym.C-slash:  perl:font-size:show
-
-URxvt.depth: 32
-URxvt.background: [80]#000000
-
-URxvt.iso14755: false
-URxvt.iso14755_52: false
+URxvt.font: xft:Liberation Mono:pixelsize=14:antialias=true
+*.font: Liberation Mono:pixelsize=14:antialias=true

@@ -1,11 +1,5 @@
-# Always extract audio
--x
-
 # Do not copy the mtime 
 --no-mtime
 
-# Save videos in music
--o ~/Music/YT-DL/%(title)s.%(ext)s
-
-# m4a format
---audio-format m4a
+# Filename format
+-o '%(playlist_index)i %(title)s.%(ext)s'

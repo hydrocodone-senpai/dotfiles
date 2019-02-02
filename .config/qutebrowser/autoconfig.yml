@@ -3,14 +3,5 @@
 
 config_version: 2
 settings:
-  backend:
-    global: webengine
-  bindings.commands:
-    global:
-      normal:
-        J: tab-prev
-        K: tab-next
-  content.pdfjs:
-    global: false
-  fonts.web.family.standard:
-    global: Unifont
+  url.start_pages:
+    global: ~/.config/startpage/startpage.html
