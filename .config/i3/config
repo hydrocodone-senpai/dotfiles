@@ -3,8 +3,10 @@
 
 # Core config
 set $mod Mod4
+set $alt Mod1
 font pango:DejaVu Sans Mono 8
 floating_modifier $mod
+focus_follows_mouse no
 
 set_from_resource $darkblack	color0  #000000
 set_from_resource $black	color8  #000000
@@ -37,8 +39,8 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+Mod1+h split h
-bindsym $mod+Mod1+v split v
+bindsym $mod+$alt+h split h
+bindsym $mod+$alt+v split v
 bindsym $mod+t layout tabbed
 bindsym $mod+Shift+t layout toggle split
 bindsym $mod+Shift+space floating toggle
@@ -105,23 +107,25 @@ bindsym $mod+g gaps inner current set 0
 bindsym $mod+Shift+g gaps inner current set 20
 
 # Shortcuts
-bindsym $mod+slash exec --no-startup-id surf
+bindsym $mod+slash exec --no-startup-id vimb
 bindsym $mod+Shift+slash exec --no-startup-id surf -mN -a A
 bindsym $mod+Shift+w exec --no-startup-id setwallpaper
 bindsym $mod+q exec --no-startup-id qutebrowser
 # bindsym $mod+Shift+n exec --no-startup-id xpad -t
 
 # Custom bindings
-bindsym $mod+Mod1+r mode "resize"
+bindsym $mod+$alt+r mode "resize"
 bindsym $mod+Shift+Return kill
-bindsym $mod+r exec --no-startup-id st -T ui_float ranger
+bindsym $mod+r exec --no-startup-id st ranger
 bindsym $mod+m exec --no-startup-id st -T ui_float -e ncmpcpp
+bindsym $mod+p exec --no-startup-id passmenu
 
 for_window [title="ui_float"] floating enable
 
 # Screenshots
 bindsym --release Print exec --no-startup-id scrot -s '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
-bindsym --release Shift+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
+bindsym --release Shift+Print exec --no-startup-id scrot -u '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
+bindsym --release $mod+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/' -d 0.1
 
 # Startup commands moved to .xinitrc -- otherwise would execute upon each restart
 

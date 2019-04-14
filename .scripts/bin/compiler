@@ -26,10 +26,11 @@ textype() { \
 	}
 
 case "$file" in
-	*\.rmd) echo "require(rmarkdown); render('$file')" | R --vanilla ;;
+	*\.rmd) echo "require(rmarkdown); render('$file', output_dir='../')" | R --vanilla ;;
 	*\.tex) textype "$file" ;;
 	*\.md) pandoc "$file" -o "$base".pdf ;;
 	*config.h) make && sudo make install ;;
+	*\.scm) mit-scheme < "$file" ;;
 	*) sent "$file" 2>/dev/null & ;;
 esac
 cd "$oridir" || exit

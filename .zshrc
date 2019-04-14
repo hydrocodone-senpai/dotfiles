@@ -1,7 +1,7 @@
 # ~/.zshrc
 
 [ -z “$PS1” ] && return
-[ -f "$HOME/.shortcuts" ] && . "$HOME/.shortcuts"
+source ~/.shortcuts
 
 # zsh features
 autoload -Uz compinit bracketed-paste-magic url-quote-magic
@@ -13,14 +13,8 @@ setopt autocd			# autocd
 unsetopt nomatch
 
 # command-line shortcuts
-function run-again {
-    zle up-history
-    zle accept-line
-}
-zle -N run-again				# ^K to re-run previous cmd 
 zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
 zle -N self-insert url-quote-magic		# auto-quote urls
-bindkey -v "^K" run-again
 
 # adds color to ls, grep, and man output
 alias ls="ls -h --color=auto --group-directories-first"
@@ -44,6 +38,7 @@ alias abcde="cd ~/Music && abcde -o flac -B"
 alias dict="sdcv"
 alias ypush="yadm commit -a && yadm push"
 alias ypull="yadm clone https://github.com/hydrocodone-senpai/dotfiles -f && yadm status"
+alias mnova="/opt/MestReNova/bin/MestReNova"
 
 # application aliases
 alias v="vim"
@@ -58,7 +53,6 @@ alias nmgui="nm-applet --no-agent"
 # sets zsh environment 
 export PATH="$PATH:$HOME/.scripts/bin" 	# set script path
 export EDITOR=vim			# vim editor
-
 export HISTFILE="$HOME/.zhistory" 	# history
 export SAVEHIST=10000 			# history size
 export LESSHISTFILE="/dev/null"    	# disables .lesshst log
