@@ -1,0 +1,82 @@
+/* hydrocodone's CSS :^) */
+
+/* body */
+/* main text -- black bg, light gray fg*/
+pre,textarea,body,input,p,div,strong {
+	background-color: black !important;
+	background-image: none !important;
+	color: #e0e0e0 !important;
+}
+/* headers -- red */
+h1,h2,h3,h4,h5,h6 {
+	background-color: black !important;
+	color: #F53232 !important;
+}
+/* links -- blue */
+a {
+	background-color: black !important;
+	color: #5757c2 !important;
+}
+/* images -- white background for .png */
+img {
+	background-color: #e0e0e0 !important;
+}
+/* code snippets -- green, with rounded corners */
+code {
+	background-color: #151515 !important;
+	color: #57c257 !important;
+	padding: 0px !important;
+	border: none !important;
+}
+pre{
+	background-color: #151515 !important;
+	color: #57c257 !important;
+	padding: 10px !important;
+	border: 1px solid #e0e0e0 !important;
+}
+
+/* tables */
+table, th, tr, td {
+	background-color: black !important;
+	background-image: none !important;
+}
+
+th {
+	color: #F53232 !important;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 1px solid #e0e0e0 !important;
+}
+
+tr, td {
+	color: #e0e0e0 !important;
+	border: none !important;
+}
+
+/* disables the border in startpage */
+th.dir {
+	border: none !important;
+}
+
+/* wikipedia inline equations inverted */
+img.mwe-math-fallback-image-inline {
+	filter: invert(1) !important;
+	background-color: white !important;
+}
+
+/* searx results */
+span.highlight {
+	background-color: black !important;
+	color: #e02020 !important;
+}
+
+/* 4channel */
+span.subject{
+	background-color: black !important;
+	color: #e02020 !important;
+}
+
+div.post.reply {
+	border: 1px solid #151515 !important;
+}
