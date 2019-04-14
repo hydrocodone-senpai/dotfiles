@@ -32,7 +32,7 @@ shortcut-default duck
 nmap <C-S> :set scripts!<CR>
 nmap <C-A> :set stylesheet!<CR>
 nmap <C-N> :set status-bar!<CR>
-nmap <C-I> :set images!<CR>
+nmap <C-G> :set images!<CR>
 nmap + zI
 nmap - zO
 nmap = zz
