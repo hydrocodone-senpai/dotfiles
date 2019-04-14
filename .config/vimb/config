@@ -2,7 +2,6 @@ set home-page=about:blank
 set download-path=~/Downloads/
 set editor-command=st -e "vim %s"
 set scripts=false
-set 
 
 set input-autohide=true
 set spell-checking=true
@@ -20,7 +19,7 @@ set default-zoom=120
 
 # Shortcuts
 
-shortcut-add d=https://duckduckgo.com/?q=$0
+shortcut-add d=https://duckduckgo.com/html?q=$0
 shortcut-add g=https://encrypted.google.com/search?q=$0
 shortcut-add w=https://wikipedia.org/wiki/$0
 shortcut-add 4=https://4chan.org/$0
@@ -46,4 +45,4 @@ set input-css=color:#d3d0c8;background-color:#000000;font:12pt Liberation Mono;
 set input-error-css=color:#f2777a;background-color:#000000;font:12pt Liberation Mono;
 set status-css=color:#ffcc66;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-css=color:#99cc99;background-color:#000000;font:12pt Liberation Mono;
-set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt DejaVu Sans Mono;
+set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Liberation Mono;
