@@ -31,7 +31,7 @@ shortcut-add 442=http://butane.chem.illinois.edu/sohirata/
 shortcut-add loncapa=https://access4.lon-capa.illinois.edu/adm/navmaps
 shortcut-add m0=https://mail.google.com/mail/u/0
 shortcut-add m1=https://mail.google.com/mail/u/1
-shortcut-add sync=127.0.0.1:8384
+shortcut-add sync=http://127.0.0.1:8384
 shortcut-default d
 
 nmap <C-S> :set scripts!<CR>
