@@ -1,5 +1,4 @@
 # ~/.bashrc
-# test
 
 # source ~/.shortcuts
 
