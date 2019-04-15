@@ -51,3 +51,6 @@ set input-error-css=color:#f2777a;background-color:#000000;font:12pt Liberation 
 set status-css=color:#ffcc66;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-css=color:#99cc99;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Liberation Mono;
+
+# Automatic Commands
+au LoadStarted http://127.0.0.1:8384/* set scripts=true	# Turns on Javascript to load Syncthing web GUI
