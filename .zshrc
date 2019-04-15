@@ -18,7 +18,7 @@ zle -N self-insert url-quote-magic		# auto-quote urls
 
 # adds color to ls, grep, and man output
 alias ls="ls -h --color=auto --group-directories-first"
-alias grep="grep --color=auto"
+alias grep="grep -i --color=auto"
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
