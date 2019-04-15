@@ -42,4 +42,4 @@ URxvt*scrollBar:  false
 
 !Fonts
 URxvt.font: xft:Liberation Mono:pixelsize=14:antialias=true
-*.font: Liberation Mono:pixelsize=14:antialias=false
+*.font: Liberation Mono:pixelsize=16:antialias=false
