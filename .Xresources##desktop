@@ -41,5 +41,5 @@ URxvt*background: [90]#000000
 URxvt*scrollBar:  false
 
 !Fonts
-URxvt.font: xft:Liberation Mono:pixelsize=14:antialias=true
+URxvt.font: Liberation Mono:pixelsize=16:antialias=false
 *.font: Liberation Mono:pixelsize=16:antialias=false
