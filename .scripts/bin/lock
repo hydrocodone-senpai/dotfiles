@@ -3,7 +3,7 @@
 # Lock script -- meant to be executed by xss-lock during suspend or screensave.
 
 i3lock \
--i "/home/hydrocodone/.scripts/i3lock.png" \
+-i "/home/hydrocodone/.scripts/i3lockscreen" \
 -k \
 --force-clock \
 --indicator \
