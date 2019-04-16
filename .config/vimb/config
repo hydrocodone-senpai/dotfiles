@@ -9,6 +9,7 @@ set closed-max-items=0
 set history-max-items=0
 set hint-keys=asdfghjkl;
 set hint-timeout=0
+set hint-keys-same-length=true
 
 set input-autohide=true
 set spell-checking=true
