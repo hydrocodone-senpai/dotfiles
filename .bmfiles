@@ -6,8 +6,7 @@ cv	~/.vimrc
 cr	~/.config/ranger/rc.conf
 ci	~/.config/i3/config
 cn	~/.ncmpcpp/config
-ct	~/.builds/st/config.h
-cf	~/.builds/surf/config.h
 cs	~/.config/vimb/style.css
 cv	~/.config/vimb/config
 ch	~/.config/startpage/startpage.html
+cy	~/.config/youtube-viewer/youtube-viewer.conf
