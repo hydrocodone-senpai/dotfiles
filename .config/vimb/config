@@ -4,6 +4,7 @@ set home-page=about:blank
 set download-path=~/Downloads/
 set editor-command=st -e vim %s
 set scripts=false
+set cookie-accept=origin
 set private-browsing=true
 set closed-max-items=0
 set history-max-items=0
@@ -56,5 +57,8 @@ set status-ssl-css=color:#99cc99;background-color:#000000;font:12pt Liberation M
 set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Liberation Mono;
 
 # Automatic Commands
-au LoadStarted http://127.0.0.1:8384/* set scripts=true	# Turns on Javascript to load Syncthing web GUI
-au LoadStarted * set scripts=off
+
+# Turns on Javascript to load Syncthing web GUI
+au LoadCommitted http://127.0.0.1:8384/* set scripts=true
+# Automatically disables Javascript and third-party Cookies for non-whitelisted websites
+au LoadCommitted * set scripts=off|set cookie-accept=origin
