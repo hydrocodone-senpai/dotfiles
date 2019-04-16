@@ -4,6 +4,7 @@ set home-page=about:blank
 set download-path=~/Downloads/
 set editor-command=st -e vim %s
 set scripts=false
+set closed-max-items=0
 set history-max-items=0
 set hint-keys=asdfghjkl;
 set hint-timeout=0
