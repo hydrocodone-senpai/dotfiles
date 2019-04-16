@@ -110,7 +110,6 @@ bindsym $mod+Shift+g gaps inner current set 20
 bindsym $mod+slash exec --no-startup-id vimb
 bindsym $mod+Shift+slash exec --no-startup-id firefox
 bindsym $mod+Shift+w exec --no-startup-id setwallpaper
-bindsym $mod+q exec --no-startup-id qutebrowser
 # bindsym $mod+Shift+n exec --no-startup-id xpad -t
 
 # Custom bindings
