@@ -1,15 +1,15 @@
 [Default Applications]
 pdf=zathura.desktop
 application/pdf=zathura.desktop
-text/html=surf.desktop
+text/html=vimb.desktop
 image/png=feh.desktop
 image/jpeg=feh.desktop
 image/jpg=feh.desktop
 image/gif=mpvgif.desktop
-x-scheme-handler/http=surf.desktop
-x-scheme-handler/https=surf.desktop
-x-scheme-handler/about=surf.desktop
-x-scheme-handler/unknown=surf.desktop
+x-scheme-handler/http=vimb.desktop
+x-scheme-handler/https=vimb.desktop
+x-scheme-handler/about=vimb.desktop
+x-scheme-handler/unknown=vimb.desktop
 
 [Added Associations]
 application/postscript=org.pwmt.zathura.desktop;
