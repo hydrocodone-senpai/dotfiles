@@ -1,0 +1,6 @@
+[Desktop Entry]
+
+Name=feh
+StartupWMClass=feh
+Exec=/usr/bin/feh
+Type=Application

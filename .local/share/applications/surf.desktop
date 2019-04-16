@@ -1,0 +1,8 @@
+[Desktop Entry]
+
+Name=surf
+StartupWMClass=surf
+Exec=surf
+Type=Application
+Categories=Network;WebBrowser
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;x-scheme-handler/http;text/html;

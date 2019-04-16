@@ -1,0 +1,7 @@
+[Desktop Entry]
+
+Name=vimb
+StartupWMClass=vimb
+Exec=vimb
+Type=Application
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;x-scheme-handler/http;text/html;

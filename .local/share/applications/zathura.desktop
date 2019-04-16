@@ -1,0 +1,7 @@
+[Desktop Entry]
+
+Name=zathura
+StartupWMClass=zathura
+Exec=/usr/bin/zathura
+Type=Application
+MimeType=application/pdf

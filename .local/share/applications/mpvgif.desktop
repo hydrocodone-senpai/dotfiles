@@ -1,0 +1,8 @@
+[Desktop Entry]
+
+Name=mpvgif
+StartupWMClass=mpvgif
+Path=/usr/bin/mpv
+Exec=mpv --loop=inf
+Type=Application
+MimeType=image/gif
