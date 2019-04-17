@@ -59,8 +59,6 @@ set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Libe
 
 # Turns on Javascript to load Syncthing web GUI
 au LoadCommitted http{s,}://127.0.0.1:8384/* set scripts=true
-# Automatically disables Javascript for non-whitelisted websites
-au LoadCommitted * set scripts=off
 # Automatically run mpv to open youtube videos and mp4 files
 au LoadCommitted http{s,}://www.youtube.com/watch?v=* sh! mpv $VIMB_URI
 au LoadCommitted *.mp4 sh! mpv $VIMB_URI
