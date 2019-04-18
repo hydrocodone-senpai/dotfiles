@@ -51,12 +51,13 @@ alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
 
 # sets zsh environment 
-export PATH="$PATH:$HOME/.scripts/bin" 	# set script path
-export EDITOR=vim			# vim editor
-export HISTFILE="$HOME/.zhistory" 	# history
-export SAVEHIST=10000 			# history size
+export PATH="$PATH:$HOME/.scripts/bin" 	# sets script path
+export EDITOR=vim			# sets vim as default editor
+export HISTFILE="$HOME/.zhistory" 	# sets history file
+export SAVEHIST=10000 			# sets size of history file
 export LESSHISTFILE="/dev/null"    	# disables .lesshst log
-export SDCV_PAGER=less			# sets output of stardict to less
+export SDCV_PAGER=less			# pipes output of stardict to less
+export HTTP_PROXY=localhost:3128	# sets proxy caching server (squid)
 
 if [ "$EUID" -ne 0 ]
 	then export PS1="%B%F{blue}%n@%M%F{green} %3~ %F{magenta}%# %b%f"
