@@ -39,7 +39,7 @@ alias mkd="mkdir -pv"
 alias abcde="cd ~/Music && abcde -o flac -B"
 alias dict="sdcv"
 alias ypush="yadm commit -a && yadm push"
-alias ypull="yadm pull && yadm diff"
+alias ypull="yadm pull && clear && yadm diff"
 alias mnova="/opt/MestReNova/bin/MestReNova"
 
 # application aliases
