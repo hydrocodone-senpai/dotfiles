@@ -31,6 +31,7 @@ man() {
 
 # command aliases
 alias p="sudo pacman"
+alias g="grep"
 alias lsl="ls -lah"
 alias ka="killall"
 alias mkd="mkdir -pv"
