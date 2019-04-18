@@ -56,9 +56,6 @@ set status-css=color:#ffcc66;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-css=color:#99cc99;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Liberation Mono;
 
-# DNT Header
-set header=DNT=1,User-Agent
-
 # Automatic Commands
 
 # Turns on Javascript to load Syncthing web GUI
@@ -66,3 +63,6 @@ au LoadStarted http{s,}://127.0.0.1:8384/* set scripts=true
 # Automatically run mpv to open youtube videos and mp4 files
 au LoadStarted http{s,}://www.youtube.com/watch?v=* sh! mpv $VIMB_URI
 au LoadStarted *.mp4 sh! mpv $VIMB_URI
+# DNT Header
+au LoadStarted * set header=DNT=1,User-Agent
+
