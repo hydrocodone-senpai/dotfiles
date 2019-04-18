@@ -1,4 +1,5 @@
 # ~/.zshrc
+# test
 
 [ -z “$PS1” ] && return
 source ~/.shortcuts
@@ -38,7 +39,7 @@ alias mkd="mkdir -pv"
 alias abcde="cd ~/Music && abcde -o flac -B"
 alias dict="sdcv"
 alias ypush="yadm commit -a && yadm push"
-alias ypull="yadm clone https://github.com/hydrocodone-senpai/dotfiles -f && clear && yadm stash show -p"
+alias ypull="yadm pull && yadm diff"
 alias mnova="/opt/MestReNova/bin/MestReNova"
 
 # application aliases
