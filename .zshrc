@@ -49,6 +49,7 @@ alias neofetch="clear && neofetch"
 alias yt="youtube-viewer"
 alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
+alias sys="systemctl"
 
 # sets zsh environment 
 export PATH=$PATH:$HOME/.scripts/bin 	# sets script path
