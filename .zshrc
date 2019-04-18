@@ -1,5 +1,4 @@
 # ~/.zshrc
-# test
 
 [ -z “$PS1” ] && return
 source ~/.shortcuts
