@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	sharedrepository = 0600
+	worktree = /home/hydrocodone
+[receive]
+	denyNonFastforwards = true
+[status]
+	showUntrackedFiles = no
+[yadm]
+	managed = true
+[remote "origin"]
+	url = https://github.com/hydrocodone-senpai/dotfiles
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[local]
+	class = t420
