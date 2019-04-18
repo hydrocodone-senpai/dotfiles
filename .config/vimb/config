@@ -35,6 +35,7 @@ shortcut-add 442=http://butane.chem.illinois.edu/sohirata/
 shortcut-add loncapa=https://access4.lon-capa.illinois.edu/adm/navmaps
 shortcut-add m=https://mail.google.com/
 shortcut-add sync=http://127.0.0.1:8384
+shortcut-add fom=https://fom.scs.illinois.edu/fom/
 shortcut-default d
 
 nmap <C-S> :set scripts!<CR>
@@ -54,6 +55,9 @@ set input-error-css=color:#f2777a;background-color:#000000;font:12pt Liberation 
 set status-css=color:#ffcc66;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-css=color:#99cc99;background-color:#000000;font:12pt Liberation Mono;
 set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Liberation Mono;
+
+# DNT Header
+set header=DNT=1,User-Agent
 
 # Automatic Commands
 
