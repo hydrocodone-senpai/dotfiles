@@ -36,6 +36,7 @@ shortcut-add loncapa=https://access4.lon-capa.illinois.edu/adm/navmaps
 shortcut-add m=https://mail.google.com/
 shortcut-add sync=http://127.0.0.1:8384
 shortcut-add fom=https://fom.scs.illinois.edu/fom/
+shortcut-add fingerprint=https://panopticlick.eff.org/
 shortcut-default d
 
 nmap <C-S> :set scripts!<CR>
