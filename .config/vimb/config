@@ -64,6 +64,5 @@ au LoadStarted http{s,}://127.0.0.1:8384/* set scripts=true
 # Automatically run mpv to open youtube videos and mp4 files
 au LoadStarted http{s,}://www.youtube.com/watch?v=* sh! mpv $VIMB_URI
 au LoadStarted *.mp4 sh! mpv $VIMB_URI
-# DNT Header
-au LoadStarted * set header=DNT=1,User-Agent
-
+# Set webkit header
+au LoadStarted * set header=DNT=1,User-Agent=,Accept=,Accept-Charset=,Accept-Encoding=,Accept-Language=
