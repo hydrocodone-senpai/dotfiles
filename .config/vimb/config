@@ -66,6 +66,5 @@ au LoadStarted http{s,}://127.0.0.1:8384/* set scripts=true
 # Automatically run mpv to open youtube videos and mp4 files
 au LoadStarted http{s,}://www.youtube.com/watch?v=* sh! mpv $VIMB_URI
 au LoadStarted *.mp4 sh! mpv $VIMB_URI
-# Set webkit header
-au LoadStarted * set header=DNT=1,User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0,Accept=,Accept-Charset=,Accept-Encoding=,Accept-Language=
-# au LoadStarted * set header=DNT=1,User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0,Accept='text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',Accept-Encoding='gzip, deflate, br',Accept-Language='en-US,en;q=0.5'
+# Set webkit header -- does not accepting br encoding
+au LoadStarted * set header=DNT=1,User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",Accept="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",Accept-Encoding="gzip",Accept-Language="en-US,en;q=0.5"
