@@ -95,17 +95,6 @@ bindsym $mod+Shift+u resize shrink height 10 px or 10 ppt
 bindsym $mod+Shift+i resize grow height 10 px or 10 ppt
 bindsym $mod+Shift+o resize grow width 10 px or 10 ppt
 
-# i3-gaps
-for_window [class="^.*"] border pixel 2
-# client.focused  #44b5b1 #44b5b1 #44b5b1 #44b5b1 #44b5b1 #44b5b1
-client.focused $cyan $cyan $cyan $cyan $cyan $cyan
-gaps inner 0
-gaps outer 0
-hide_edge_borders smart
-# smart_gaps inverse_outer
-bindsym $mod+g gaps inner current set 0
-bindsym $mod+Shift+g gaps inner current set 20
-
 # Shortcuts
 bindsym $mod+slash exec --no-startup-id vimb
 bindsym $mod+Shift+slash exec --no-startup-id firefox
