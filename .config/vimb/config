@@ -32,6 +32,7 @@ shortcut-add g=https://encrypted.google.com/search?q=$0
 shortcut-add w=https://wikipedia.org/wiki/$0
 shortcut-add 4=https://4chan.org/$0
 shortcut-add aw=https://wiki.archlinux.org/index.php/$0
+shortcut-add az=https://azlyrics.com/lyrics/$0/$1.html
 
 shortcut-add 442=http://butane.chem.illinois.edu/sohirata/
 shortcut-add loncapa=https://access4.lon-capa.illinois.edu/adm/navmaps
