@@ -8,9 +8,12 @@ autoload -Uz compinit bracketed-paste-magic url-quote-magic
 compinit   			# fuzzy-autocompletion
 ttyctl -f  			# disable terminal pause
 (cat ~/.cache/wal/sequences &) 	# wal
-set -o vi			# vi-mode
 setopt autocd			# autocd
 unsetopt nomatch
+
+# vi-mode
+bindkey -v
+export KEYTIMEOUT=1		# Sets <ESC> delay to 0.1s
 
 # command-line shortcuts
 zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
