@@ -2,7 +2,7 @@
 
 /* body */
 /* main text -- black bg, light gray fg*/
-pre,textarea,body,input,p,div,strong,article {
+html,pre,textarea,body,input,p,div,strong,article {
 	background-color: black !important;
 	background-image: none !important;
 	color: #e0e0e0 !important;
