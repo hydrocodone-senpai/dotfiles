@@ -119,7 +119,7 @@ bindsym $mod+p exec --no-startup-id passmenu
 # Screenshots
 bindsym --release Print exec --no-startup-id scrot -s '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
 bindsym --release Shift+Print exec --no-startup-id scrot -u '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
-bindsym --release $mod+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/' -d 0.2
+bindsym --release $mod+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/' -d 1
 
 # i3bar config
 bar {
