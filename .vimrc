@@ -40,3 +40,6 @@ autocmd Filetype rmd inoremap :h ---<Enter>title:<Space><++><Enter>author:<Space
 "html shortcuts
 autocmd Filetype html inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
 autocmd Filetype html inoremap :t <th><++></th><++><Esc>Bi
+
+"goyo configuration
+let g:goyo_linenr=1
