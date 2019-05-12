@@ -20,6 +20,9 @@ nnoremap <leader><space> :nohlsearch<CR>
 "folding
 set foldenable
 
+"indentation
+autocmd Filetype c set cindent
+
 "compiler script
 set shellcmdflag=-ic
 map <leader>c :!compiler <c-r>%<CR>
