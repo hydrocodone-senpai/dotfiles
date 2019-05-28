@@ -2,4 +2,4 @@
 --no-mtime
 
 # Filename format
--o '%(playlist_index)i %(title)s.%(ext)s'
+-o '%(title)s.%(ext)s'
