@@ -112,7 +112,7 @@ bindsym $mod+Shift+w exec --no-startup-id setwallpaper
 bindsym $mod+$alt+r mode "resize"
 bindsym $mod+Shift+Return kill
 bindsym $mod+r exec --no-startup-id st ranger
-bindsym $mod+m exec --no-startup-id st -T ui_float -e ncmpcpp
+bindsym $mod+m exec --no-startup-id st -T ui_float ncmpcpp
 bindsym $mod+p exec --no-startup-id passmenu
 
 
