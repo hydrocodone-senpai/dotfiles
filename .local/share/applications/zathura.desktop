@@ -2,6 +2,6 @@
 
 Name=zathura
 StartupWMClass=zathura
-Exec=/usr/bin/zathura
+Exec=/usr/bin/zathura --fork
 Type=Application
 MimeType=application/pdf
