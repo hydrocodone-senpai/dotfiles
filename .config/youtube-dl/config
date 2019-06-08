@@ -3,3 +3,7 @@
 
 # Filename format
 -o '%(title)s.%(ext)s'
+
+# Infinite retries
+-R infinite
+--fragment-retries infinite
