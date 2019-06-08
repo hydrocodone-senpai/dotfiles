@@ -32,6 +32,7 @@ case "$file" in
 	*config.h) make && sudo make install ;;
 	*\.scm) mit-scheme < "$file" ;;
 	*\.c) cc $file && ./a.out ;;
+	*\.py) python $file ;;
 	*) sent "$file" 2>/dev/null & ;;
 esac
 cd "$oridir" || exit
