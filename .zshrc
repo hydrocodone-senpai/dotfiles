@@ -56,6 +56,9 @@ alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
 alias sys="systemctl"
 
+# "read file" alias -- write into full application later
+alias rd="xdg-open"
+
 # sets zsh environment 
 export PATH=$PATH:$HOME/.scripts/bin 	# sets script path
 export EDITOR=vim			# sets vim as default editor
