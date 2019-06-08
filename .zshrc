@@ -9,6 +9,7 @@ compinit   			# fuzzy-autocompletion
 ttyctl -f  			# disable terminal pause
 (cat ~/.cache/wal/sequences &) 	# wal
 setopt autocd			# autocd
+setopt noautomenu		# disables autocompletion if choice is ambiguous
 unsetopt nomatch
 
 # vi-mode
