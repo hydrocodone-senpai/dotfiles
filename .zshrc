@@ -32,6 +32,10 @@ man() {
     command man "$@"
 }
 
+# prompt during rm/mv operation for safety
+alias rm="rm -I"
+alias mv="mv -i"
+
 # command aliases
 alias p="sudo pacman"
 alias g="grep"
