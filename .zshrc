@@ -59,6 +59,7 @@ alias nmgui="nm-applet --no-agent"
 
 # "read file" alias -- write into full application later
 alias rd="xdg-open"
+alias rdf="rd \"\$(fzf)\""
 
 # sets zsh environment 
 export PATH=$PATH:$HOME/.scripts/bin 	# sets script path
