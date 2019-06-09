@@ -37,8 +37,10 @@ man() {
 alias p="sudo pacman"
 alias g="grep"
 alias lsl="ls -lah"
+alias ls1="ls -1a"
 alias ka="killall"
 alias mkd="mkdir -pv"
+alias sys="systemctl"
 alias abcde="cd ~/Music && abcde -o flac -B"
 alias dict="sdcv"
 alias ypush="yadm commit -a && yadm push"
@@ -54,7 +56,6 @@ alias neofetch="clear && neofetch"
 alias yt="youtube-viewer"
 alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
-alias sys="systemctl"
 
 # "read file" alias -- write into full application later
 alias rd="xdg-open"
