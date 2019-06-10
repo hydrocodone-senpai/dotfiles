@@ -60,7 +60,7 @@ alias neofetch="clear && neofetch"
 alias yt="youtube-viewer"
 alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
-alias mb="mailboat"
+alias news="newsboat"
 
 # "read file" alias -- write into full application later
 alias rd="xdg-open"
