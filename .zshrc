@@ -60,6 +60,7 @@ alias neofetch="clear && neofetch"
 alias yt="youtube-viewer"
 alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
+alias mb="mailboat"
 
 # "read file" alias -- write into full application later
 alias rd="xdg-open"
@@ -68,6 +69,7 @@ alias rdf="rd \"\$(fzf)\""
 # sets zsh environment 
 export PATH="$PATH:$HOME/.scripts/bin" 	# sets script path
 export EDITOR="vim"			# sets vim as default editor
+export BROWSER="vimb"			# sets vimb as default browser
 export HISTFILE="$HOME/.zhistory" 	# sets history file
 export SAVEHIST="10000"			# sets size of history file
 export LESSHISTFILE="/dev/null"    	# disables .lesshst log
