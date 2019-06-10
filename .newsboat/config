@@ -1,0 +1,11 @@
+# hydrocodone's newsboat config
+
+# no history
+history-limit 0
+
+# color
+color info white black bold
+color listnormal yellow default
+color listnormal_unread blue default bold
+color listfocus white default
+color listfocus_unread white default bold
