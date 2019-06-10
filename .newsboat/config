@@ -1,5 +1,11 @@
 # hydrocodone's newsboat config
 
+# key bindings
+bind-key j next
+bind-key k prev
+bind-key J next-feed
+bind-key K prev-feed
+
 # no history
 history-limit 0
 
