@@ -6,6 +6,9 @@ bind-key k prev
 bind-key J next-feed
 bind-key K prev-feed
 
+bind-key j down
+bind-key k up
+
 # no history
 history-limit 0
 
