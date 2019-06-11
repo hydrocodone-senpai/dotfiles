@@ -50,8 +50,11 @@ alias dict="sdcv"
 alias ypush="yadm commit -a && yadm push"
 alias ypull="yadm pull && clear && yadm diff"
 alias mnova="/opt/MestReNova/bin/MestReNova"
+alias highlight="highlight -O truecolor -s solarized-dark"
 
+#
 # application aliases
+#
 alias v="vim"
 alias sv="sudo vim"
 alias r="ranger"
@@ -66,16 +69,19 @@ alias news="newsboat"
 alias rd="xdg-open"
 alias rdf="rd \"\$(fzf)\""
 
-# sets zsh environment 
-export PATH="$PATH:$HOME/.scripts/bin" 	# sets script path
-export EDITOR="vim"			# sets vim as default editor
-export BROWSER="vimb"			# sets vimb as default browser
-export HISTFILE="$HOME/.zhistory" 	# sets history file
-export SAVEHIST="10000"			# sets size of history file
-export LESSHISTFILE="/dev/null"    	# disables .lesshst log
-export SDCV_PAGER="less"		# pipes output of stardict to less
-export LESS="-R"			# enable ANSI color escape sequences in less
-# export HTTP_PROXY=http://localhost:3128	# sets proxy caching server (squid)
+#
+# set zsh environment 
+#
+export PATH="$PATH:$HOME/.scripts/bin" 				# sets script path
+export EDITOR="vim"						# sets vim as default editor
+export BROWSER="vimb"						# sets vimb as default browser
+export HISTFILE="$HOME/.zhistory" 				# sets history file
+export SAVEHIST="10000"						# sets size of history file
+export LESSHISTFILE="/dev/null"    				# disables .lesshst log
+export SDCV_PAGER="less"					# pipes output of stardict to less
+export LESS="-R"						# enable ANSI color escape sequences in less
+export HIGHLIGHT_OPTIONS="-O truecolor -s solarized-dark"	# sets solarized color output for highlight
+# export HTTP_PROXY=http://localhost:3128			# sets proxy caching server (squid)
 
 if [ "$EUID" -ne 0 ]
 	then export PS1="%B%F{blue}%n@%M%F{green} %3~ %F{magenta}%# %b%f"
