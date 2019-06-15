@@ -1,3 +1,5 @@
+"hydrocodone's .vimrc
+
 syntax on
 
 "pathogen
@@ -5,7 +7,6 @@ execute pathogen#infect()
 
 "some quality of life stuff
 set showcmd
-set cursorline
 set number number
 set number relativenumber
 
