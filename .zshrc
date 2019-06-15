@@ -72,7 +72,7 @@ alias rdf="rd \"\$(fzf)\""
 #
 # set zsh environment 
 #
-export PATH="$PATH:$HOME/.scripts/bin" 				# sets script path
+export PATH="$PATH:$HOME/.scripts" 				# sets script path
 export EDITOR="vim"						# sets vim as default editor
 export BROWSER="vimb"						# sets vimb as default browser
 export HISTFILE="$HOME/.zhistory" 				# sets history file
