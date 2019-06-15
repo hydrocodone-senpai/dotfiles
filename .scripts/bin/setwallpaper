@@ -1,5 +1,0 @@
-#!/bin/bash
-# Sets the wallpaper using wal.
-
-wal -i /home/hydrocodone/Images/backgrounds -n -a=90
-feh --no-fehbg --randomize --bg-fill "$(</home/hydrocodone/.cache/wal/wal)"
