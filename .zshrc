@@ -13,7 +13,9 @@ unsetopt nomatch
 
 # vi-mode
 bindkey -v
-export KEYTIMEOUT=1		# Sets <ESC> delay to 0.1s
+export KEYTIMEOUT=1			# Sets <ESC> delay to 0.1s
+bindkey '' backward-delete-char	# enable backspace after returning from command mode
+bindkey '' backward-delete-char
 
 # command-line shortcuts
 zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
