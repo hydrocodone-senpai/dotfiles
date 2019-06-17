@@ -22,7 +22,7 @@ zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
 zle -N self-insert url-quote-magic		# auto-quote urls
 
 # adds color to ls, grep, and man output
-alias ls="ls -h --color=auto --group-directories-first"
+alias ls="ls -1 -h --color=auto --group-directories-first"
 alias grep="grep -i --color=auto"
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
@@ -43,7 +43,6 @@ alias cp="cp -i"
 alias p="sudo pacman"
 alias g="grep"
 alias lsl="ls -la"
-alias ls1="ls -1"
 alias ka="killall"
 alias mkd="mkdir -pv"
 alias sys="systemctl"
