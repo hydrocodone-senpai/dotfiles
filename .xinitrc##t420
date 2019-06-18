@@ -1,4 +1,5 @@
 xbindkeys &
+xmodmap ~/.xmodmaprc &
 xrdb ~/.Xresources &
 xss-lock -- lock &
 setwallpaper &
