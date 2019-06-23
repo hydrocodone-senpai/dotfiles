@@ -9,6 +9,12 @@ colorscheme wal
 set showcmd
 set number number
 set number relativenumber
+set textwidth=80
+set formatoptions=croqan
+set formatlistpat=^\\s*[0-9*]\\+[\\]:.)}\\t\ ]\\s*
+
+"undefine comment indicators to support indentation of bulleted lists in .(r)md files
+autocmd Filetype md,rmd set comments=
 
 "searching
 set incsearch
