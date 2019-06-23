@@ -1,27 +1,26 @@
 # ~/.zshrc
 
-[ -z “$PS1” ] && return
-source ~/.shortcuts
+[ -z “$PS1” ] && return				# if not running interactively, don't do anything
+ttyctl -f  					# disable terminal pause
 
-# zsh features
+# autoload startup files
 autoload -Uz compinit bracketed-paste-magic url-quote-magic
-compinit   			# fuzzy-autocompletion
-ttyctl -f  			# disable terminal pause
-(cat ~/.cache/wal/sequences &) 	# wal
-setopt noautomenu		# disables autocompletion if choice is ambiguous
-unsetopt nomatch
+
+# configure zsh line editor
+compinit   					# fuzzy-autocompletion for nested files
+(cat ~/.cache/wal/sequences &) 			# load wal colorscheme
+setopt noautomenu				# disables autocompletion if choice is ambiguous
+unsetopt nomatch				#
+zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
+zle -N self-insert url-quote-magic		# auto-quote urls
 
 # vi-mode
 bindkey -v
-export KEYTIMEOUT=1			# Sets <ESC> delay to 0.1s
-bindkey '' backward-delete-char	# enable backspace after returning from command mode
-bindkey '' backward-delete-char
-bindkey '' backward-kill-word		# enable  and  bindings to work similarly
-bindkey '' backward-kill-line
-
-# command-line shortcuts
-zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
-zle -N self-insert url-quote-magic		# auto-quote urls
+export KEYTIMEOUT=1				# Sets <ESC> delay to 0.1s
+bindkey '' backward-delete-char		# enable backspace after returning from command mode
+bindkey '' backward-delete-char		#
+bindkey '' backward-kill-word			# enable  and  bindings to work similarly
+bindkey '' backward-kill-line			#
 
 # format ls, grep, and man output
 alias ls="ls -1 -h -p --color=auto --group-directories-first"
@@ -55,9 +54,7 @@ alias ypull="yadm pull && clear && yadm diff"
 alias mnova="/opt/MestReNova/bin/MestReNova"
 alias highlight="highlight -O truecolor -s solarized-dark"
 
-#
 # application aliases
-#
 alias v="vim"
 alias sv="sudo vim"
 alias r="ranger"
@@ -68,24 +65,23 @@ alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
 alias news="newsboat"
 
-# "read file" alias -- write into full application later
+# "read file" alias -- write into full script later
 alias rd="xdg-open"
 alias rdf="rd \"\$(fzf)\""
 
-#
 # set zsh environment 
-#
-export PATH="$PATH:$HOME/.scripts" 				# sets script path
-export EDITOR="vim"						# sets vim as default editor
-export BROWSER="vimb"						# sets vimb as default browser
-export HISTFILE="$HOME/.zhistory" 				# sets history file
-export SAVEHIST="10000"						# sets size of history file
-export LESSHISTFILE="/dev/null"    				# disables .lesshst log
-export SDCV_PAGER="less"					# pipes output of stardict to less
-export LESS="-R"						# enable ANSI color escape sequences in less
-export HIGHLIGHT_OPTIONS="-O truecolor -s solarized-dark"	# sets solarized color output for highlight
-# export HTTP_PROXY=http://localhost:3128			# sets proxy caching server (squid)
+export PATH="$PATH:$HOME/.scripts"
+export EDITOR="vim"
+export BROWSER="vimb"
+export HISTFILE="$HOME/.zhistory"
+export SAVEHIST="10000"
+export LESSHISTFILE="/dev/null"
+export SDCV_PAGER="less"
+export LESS="-R"
+export HIGHLIGHT_OPTIONS="-O truecolor -s solarized-dark"
+# export HTTP_PROXY=http://localhost:3128
 
+# finally, print prompt
 if [ "$EUID" -ne 0 ]
 	then export PS1="%B%F{blue}%n@%M%F{green} %3~ %F{magenta}%# %b%f"
 	else export PS1="%B[%F{magenta}ROOT@$(hostname | awk '{print toupper($0)}')%F{green} %3~%f] %# "
