@@ -6,9 +6,8 @@ ttyctl -f  					# disable terminal pause
 # autoload startup files
 autoload -Uz compinit bracketed-paste-magic url-quote-magic
 
-# configure zsh line editor
+# configure zsh line editor and auto-completion
 compinit   					# fuzzy-autocompletion for nested files
-(cat ~/.cache/wal/sequences &) 			# load wal colorscheme
 setopt noautomenu				# disables autocompletion if choice is ambiguous
 unsetopt nomatch				#
 zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
@@ -81,7 +80,8 @@ export LESS="-R"
 export HIGHLIGHT_OPTIONS="-O truecolor -s solarized-dark"
 # export HTTP_PROXY=http://localhost:3128
 
-# finally, print prompt
+# finally, print formatted prompt
+(cat ~/.cache/wal/sequences &)
 if [ "$EUID" -ne 0 ]
 	then export PS1="%B%F{blue}%n@%M%F{green} %3~ %F{magenta}%# %b%f"
 	else export PS1="%B[%F{magenta}ROOT@$(hostname | awk '{print toupper($0)}')%F{green} %3~%f] %# "
