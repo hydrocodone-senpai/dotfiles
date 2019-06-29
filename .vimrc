@@ -15,6 +15,8 @@ set formatlistpat=^\\s*[0-9*]\\+[\\]:.)}\\t\ ]\\s*
 
 "undefine comment indicators to support indentation of bulleted lists in .(r)md files
 autocmd Filetype md,rmd set comments=
+" remove trailing whitespace after every save
+autocmd BufWritePre * %s/\s\+$//e
 
 "searching
 set incsearch
