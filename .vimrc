@@ -34,7 +34,7 @@ autocmd Filetype c set cindent
 
 "compiler script
 set shellcmdflag=-ic
-map <leader>c :!compiler <c-r>%<CR>
+map <leader>c :!compile <c-r>%<CR>
 
 "rmd shortcuts
 autocmd Filetype rmd inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
