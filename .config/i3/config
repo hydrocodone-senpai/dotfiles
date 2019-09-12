@@ -116,11 +116,18 @@ bindsym $mod+r exec --no-startup-id $term ranger
 bindsym $mod+m exec --no-startup-id $term -T ui_float ncmpcpp
 bindsym $mod+p exec --no-startup-id passmenu
 
-
 # Screenshots
 bindsym --release Print exec --no-startup-id scrot -s '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
 bindsym --release Shift+Print exec --no-startup-id scrot -u '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/'
 bindsym --release $mod+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e 'mv $f ~/Images/screenshots/' -d 1
+
+# scratchpad
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+exec --no-startup-id $term -n dropdown
+
+bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
 # i3bar config
 bar {
