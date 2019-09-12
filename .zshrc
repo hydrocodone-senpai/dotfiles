@@ -65,10 +65,10 @@ alias nmgui="nm-applet --no-agent"
 alias news="newsboat"
 
 # "read file" alias -- write into full script later
-alias rd="xdg-open"
+alias rd="bbg xdg-open"
 alias rdf="rd \"\$(fzf)\""
 
-# set zsh environment 
+# set zsh environment
 export PATH="$PATH:$HOME/.scripts"
 export EDITOR="vim"
 export BROWSER="vimb"
