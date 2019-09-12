@@ -4,6 +4,7 @@
 # Core config
 set $mod Mod4
 set $alt Mod1
+set $term st
 font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 focus_follows_mouse no
@@ -26,7 +27,7 @@ set_from_resource $darkwhite	color7  #000000
 set_from_resource $white	color15 #000000
 set $transparent			#00000000
 
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+d exec --no-startup-id dmenu_run
 
 # Movement and layout
@@ -81,7 +82,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-bindsym $mod+semicolon workspace next 
+bindsym $mod+semicolon workspace next
 bindsym $mod+n workspace prev
 bindsym $mod+Shift+semicolon move container to workspace next
 bindsym $mod+Shift+n move container to workspace prev
@@ -89,7 +90,7 @@ bindsym $mod+Shift+n move container to workspace prev
 # i3 functions
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+x exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-        
+
 bindsym $mod+Shift+y resize shrink width 10 px or 10 ppt
 bindsym $mod+Shift+u resize shrink height 10 px or 10 ppt
 bindsym $mod+Shift+i resize grow height 10 px or 10 ppt
@@ -111,8 +112,8 @@ bindsym $mod+Shift+w exec --no-startup-id setwallpaper
 # Custom bindings
 bindsym $mod+$alt+r mode "resize"
 bindsym $mod+Shift+Return kill
-bindsym $mod+r exec --no-startup-id st ranger
-bindsym $mod+m exec --no-startup-id st -T ui_float ncmpcpp
+bindsym $mod+r exec --no-startup-id $term ranger
+bindsym $mod+m exec --no-startup-id $term -T ui_float ncmpcpp
 bindsym $mod+p exec --no-startup-id passmenu
 
 
