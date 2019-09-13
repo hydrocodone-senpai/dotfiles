@@ -111,7 +111,7 @@ bindsym $mod+Shift+w exec --no-startup-id setwallpaper
 
 # Custom bindings
 bindsym $mod+$alt+r mode "resize"
-bindsym $mod+Shift+Return [con_id="__focused__" instance="^(?!dropdown).*$"] kill; [instance="dropdown"] scratchpad show
+bindsym $mod+Shift+Return [con_id="__focused__" instance="^(?!dropdown).*$"] kill; [con_id="__focused__" instance="dropdown"] scratchpad show
 bindsym $mod+r exec --no-startup-id $term ranger
 bindsym $mod+m exec --no-startup-id $term -T ui_float ncmpcpp
 bindsym $mod+p exec --no-startup-id passmenu
