@@ -48,6 +48,7 @@ autocmd Filetype rmd inoremap :g ```{r,echo=FALSE,out.width='100%',fig.align='ce
 autocmd Filetype rmd inoremap :e \begin{equation}<Enter><++><Enter>\end{equation}<Enter><++><Esc>3ki
 autocmd Filetype rmd inoremap :a \begin{align}<Enter><++><Enter>\end{align}<Enter><++><Esc>3ki
 autocmd Filetype rmd inoremap :h ---<Enter>title:<Space><++><Enter>author:<Space><++><Enter>date:<Space><++><Enter>output:<Space>pdf_document<Enter>---<Enter><++><Esc>ggi
+autocmd Filetype rmd inoremap :s \SI{<++>}{<++>}<++><Esc>Bi
 
 "html shortcuts
 autocmd Filetype html inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
