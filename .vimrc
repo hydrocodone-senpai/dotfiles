@@ -44,7 +44,7 @@ autocmd FileType rmd inoremap :f \frac{<++>}{<++>}<++><Esc>Bi
 autocmd Filetype rmd inoremap :b ****<++><Esc>5hi
 autocmd Filetype rmd inoremap :i **<++><Esc>4hi
 autocmd Filetype rmd inoremap :m $$<++><Esc>4hi
-autocmd Filetype rmd inoremap :g ```{r,echo=FALSE,out.width='100%',fig.align='center',fig.pos="h",fig.cap="<++>"}<Enter>knitr::include_graphics("~/Images/figures/<++>.png")<Enter>```<Enter><++><Esc>3ki
+autocmd Filetype rmd inoremap :g ```{r,fig.cap=cap,out.width="100%"}<Enter>fig.cap<Space>=<Space><++><Enter>include_graphics("figures/<++>.png")<Enter>```<Enter><++><Esc>3ki
 autocmd Filetype rmd inoremap :e \begin{equation}<Enter><++><Enter>\end{equation}<Enter><++><Esc>3ki
 autocmd Filetype rmd inoremap :a \begin{align}<Enter><++><Enter>\end{align}<Enter><++><Esc>3ki
 autocmd Filetype rmd inoremap :h ---<Enter>title:<Space><++><Enter>author:<Space><++><Enter>date:<Space><++><Enter>output:<Space>pdf_document<Enter>---<Enter><++><Esc>ggi
