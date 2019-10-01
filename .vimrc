@@ -38,7 +38,7 @@ map <leader>c :!compile <c-r>%<CR>
 
 "rmd shortcuts
 autocmd Filetype rmd inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
-autocmd FileType rmd inoremap :t ```{r,echo=FALSE}<Enter><++><-read.xlsx('figures/<++>.xlsx',namedRegion='<++>')<Enter>kable(<++>,caption='<++>',align='c',booktabs='T',linesep="",col.names=<++>)<Space>%>%<Enter>kable_styling(latex_options=c('striped','hold_position'))<Enter>```<Enter><++><Esc>5ki
+autocmd FileType rmd inoremap :t ```{r,echo=FALSE}<Enter><++><-read.xlsx('figures/<++>.xlsx',namedRegion='<++>')<Enter>kable(<++>,caption='<++>',align='c',booktabs='T',escape='F',linesep="",col.names=<++>)<Space>%>%<Enter>kable_styling(latex_options=c('striped','hold_position'))<Enter>```<Enter><++><Esc>5ki
 autocmd FileType rmd inoremap :x \textrm{}<++><Esc>4hi
 autocmd FileType rmd inoremap :f \frac{<++>}{<++>}<++><Esc>Bi
 autocmd Filetype rmd inoremap :b ****<++><Esc>5hi
