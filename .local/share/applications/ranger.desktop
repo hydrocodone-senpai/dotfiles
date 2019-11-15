@@ -2,6 +2,6 @@
 
 Name=ranger
 StartupWMClass=ranger
-Exec=st -e ranger
+Exec=termopen ranger
 Type=Application
 MimeType=inode/directory
