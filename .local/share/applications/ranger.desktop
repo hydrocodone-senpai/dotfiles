@@ -1,0 +1,7 @@
+[Desktop Entry]
+
+Name=ranger
+StartupWMClass=ranger
+Exec=st -e ranger
+Type=Application
+MimeType=inode/directory
