@@ -45,7 +45,6 @@ bindsym $mod+$alt+v split v
 bindsym $mod+t layout tabbed
 bindsym $mod+Shift+t layout toggle split
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+f fullscreen toggle
 bindsym $mod+space focus mode_toggle
 
 # Workspaces
@@ -102,6 +101,7 @@ for_window [class=".*"] split toggle
 for_window [class="^.*"] border pixel 2
 for_window [title="ui_float"] floating enable
 client.focused $cyan $cyan $cyan $cyan $cyan $cyan
+hide_edge_borders smart
 
 # Shortcuts
 bindsym $mod+slash exec --no-startup-id vimb
