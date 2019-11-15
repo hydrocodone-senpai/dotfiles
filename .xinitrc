@@ -1,0 +1,1 @@
+/home/hydrocodone/.xinitrc##t420

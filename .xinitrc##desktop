@@ -1,9 +1,0 @@
-xbindkeys &
-xmodmap ~/.xmodmaprc &
-xrdb ~/.Xresources &
-xss-lock -- lock &
-setwallpaper &
-unclutter &
-redshift &
-compton &
-exec i3
