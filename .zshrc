@@ -75,10 +75,10 @@ export EDITOR="vim"
 export BROWSER="vimb"
 export HISTFILE="$HOME/.zhistory"
 export SAVEHIST="10000"
-export LESSHISTFILE="/dev/null"
 export SDCV_PAGER="less"
 export LESS="-R"
-export HIGHLIGHT_OPTIONS="-O truecolor -s solarized-dark"
+export LESSHISTFILE="/dev/null"
+export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
 # export HTTP_PROXY=http://localhost:3128
 
 # finally, print formatted prompt
