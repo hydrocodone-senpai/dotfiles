@@ -63,6 +63,7 @@ alias yt="youtube-viewer"
 alias yta="youtube-dl -x --audio-format wav"
 alias nmgui="nm-applet --no-agent"
 alias news="newsboat"
+alias feh="feh --force-aliasing -A -Z -R 1"
 
 # "read file" alias -- write into full script later
 alias rd="bbg xdg-open"
