@@ -7,7 +7,7 @@ set $alt Mod1
 set $term st
 font pango:DejaVu Sans Mono 8
 floating_modifier $mod
-focus_follows_mouse no
+focus_follows_mouse yes
 
 set_from_resource $darkblack	color0  #000000
 set_from_resource $black	color8  #000000
