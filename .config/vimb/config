@@ -3,7 +3,8 @@
 set home-page=about:blank
 set download-path=~/Downloads/
 set editor-command=st -e vim %s
-set scripts=false
+set scripts=true
+set stylesheet=false
 set cookie-accept=never
 set private-browsing=true
 set closed-max-items=0
@@ -34,12 +35,8 @@ shortcut-add 4=https://4chan.org/$0
 shortcut-add aw=https://wiki.archlinux.org/index.php/$0
 shortcut-add az=https://azlyrics.com/lyrics/$0/$1.html
 
-shortcut-add 442=http://butane.chem.illinois.edu/sohirata/
-shortcut-add loncapa=https://access4.lon-capa.illinois.edu/adm/navmaps
 shortcut-add m=https://mail.google.com/
 shortcut-add sync=http://127.0.0.1:8384
-shortcut-add fom=https://fom.scs.illinois.edu/fom/
-shortcut-add fingerprint=https://panopticlick.eff.org/
 shortcut-default d
 
 nmap <C-S> :set scripts!<CR>
@@ -62,8 +59,6 @@ set status-ssl-invalid-css=color:#f2777a;background-color:#000000;font:12pt Libe
 
 # Automatic Commands
 
-# Turns on Javascript to load Syncthing web GUI
-au LoadStarted http{s,}://127.0.0.1:8384/* set scripts=true
 # Automatically run mpv to open youtube videos and mp4 files
 au LoadStarted http{s,}://www.youtube.com/watch?v=* sh! mpv $VIMB_URI
 au LoadStarted *.mp4 sh! mpv $VIMB_URI
