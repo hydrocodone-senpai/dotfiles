@@ -1,25 +1,30 @@
 # ~/.zshrc
 
-[ -z “$PS1” ] && return				# if not running interactively, don't do anything
-ttyctl -f  					# disable terminal pause
+# if not running interactively, don't do anything
+[ -z “$PS1” ] && return
+
+# disable terminal pause
+ttyctl -f
 
 # autoload startup files
 autoload -Uz compinit bracketed-paste-magic url-quote-magic
 
-# configure zsh line editor and auto-completion
-compinit   					# fuzzy-autocompletion for nested files
-setopt noautomenu				# disables autocompletion if choice is ambiguous
-unsetopt nomatch				#
-zle -N bracketed-paste bracketed-paste-magic	# auto-bracket clipboard input
-zle -N self-insert url-quote-magic		# auto-quote urls
-
 # vi-mode
 bindkey -v
-export KEYTIMEOUT=1				# Sets <ESC> delay to 0.1s
-bindkey '' backward-delete-char		# enable backspace after returning from command mode
-bindkey '' backward-delete-char		#
-bindkey '' backward-kill-word			# enable  and  bindings to work similarly
-bindkey '' backward-kill-line			#
+export KEYTIMEOUT=1
+bindkey '' backward-delete-char
+bindkey '' backward-delete-char
+bindkey '' backward-kill-word
+bindkey '' backward-kill-line
+
+# fuzzy tab completion for nested directories
+compinit
+setopt noautomenu
+unsetopt nomatch
+
+# auto-bracket clipboard input, auto-quote URLs
+zle -N bracketed-paste bracketed-paste-magic
+zle -N self-insert url-quote-magic
 
 # format ls, grep, and man output
 alias ls="ls -1 -h -p --color=auto --group-directories-first"
