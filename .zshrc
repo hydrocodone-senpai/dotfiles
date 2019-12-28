@@ -68,19 +68,6 @@ alias news="newsboat"
 alias rd="bbg xdg-open"
 alias rdf="rd \"\$(fzf)\""
 
-# set zsh environment
-export PATH="$PATH:$HOME/.scripts"
-export TERM="st"
-export EDITOR="vim"
-export BROWSER="vimb"
-export HISTFILE="$HOME/.zhistory"
-export SAVEHIST="10000"
-export SDCV_PAGER="less"
-export LESS="-R"
-export LESSHISTFILE="/dev/null"
-export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
-# export HTTP_PROXY=http://localhost:3128
-
 # finally, print formatted prompt
 (cat ~/.cache/wal/sequences &)
 if [ "$EUID" -ne 0 ]
