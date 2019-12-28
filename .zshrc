@@ -32,6 +32,9 @@ setopt autopushd pushdminus pushdsilent pushdtohome
 # enable spelling correction
 setopt correct correctall
 
+# ignore repeated lines in history
+setopt histignoredups histignorespace
+
 # format ls, grep, and man output
 alias ls="ls -1 -h -p --color=auto --group-directories-first"
 alias grep="grep -i --color=auto"
