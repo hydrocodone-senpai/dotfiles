@@ -29,6 +29,9 @@ zle -N self-insert url-quote-magic
 # enable directory stacks
 setopt autopushd pushdminus pushdsilent pushdtohome
 
+# enable spelling correction
+setopt correct correctall
+
 # format ls, grep, and man output
 alias ls="ls -1 -h -p --color=auto --group-directories-first"
 alias grep="grep -i --color=auto"
