@@ -6,9 +6,6 @@
 # disable terminal pause
 ttyctl -f
 
-# autoload startup files
-autoload -Uz compinit bracketed-paste-magic url-quote-magic
-
 # vi-mode
 bindkey -v
 export KEYTIMEOUT=1
@@ -17,11 +14,18 @@ bindkey '' backward-delete-char
 bindkey '' backward-kill-word
 bindkey '' backward-kill-line
 
-# fuzzy tab completion for nested directories
+# fuzzy tab completion
+autoload -Uz compinit
 compinit
+zmodload zsh/complist
 zstyle ':completion:*' menu select
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
 
 # auto-bracket clipboard input, auto-quote URLs
+autoload -Uz bracketed-paste-magic url-quote-magic
 zle -N bracketed-paste bracketed-paste-magic
 zle -N self-insert url-quote-magic
 
