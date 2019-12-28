@@ -26,6 +26,9 @@ unsetopt nomatch
 zle -N bracketed-paste bracketed-paste-magic
 zle -N self-insert url-quote-magic
 
+# enable directory stacks
+setopt autopushd pushdminus pushdsilent pushdtohome
+
 # format ls, grep, and man output
 alias ls="ls -1 -h -p --color=auto --group-directories-first"
 alias grep="grep -i --color=auto"
@@ -54,6 +57,7 @@ alias sys="systemctl"
 alias abcde="cd ~/Music && abcde -o flac -B"
 alias dict="sdcv"
 alias mnova="/opt/MestReNova/bin/MestReNova"
+alias dirs="dirs -v"
 
 # application aliases
 alias v="vim"
