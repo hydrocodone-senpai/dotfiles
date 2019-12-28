@@ -30,7 +30,7 @@ zle -N bracketed-paste bracketed-paste-magic
 zle -N self-insert url-quote-magic
 
 # enable directory stacks
-setopt autopushd pushdminus pushdsilent pushdtohome
+setopt autopushd pushdminus pushdignoredups pushdsilent pushdtohome
 
 # enable spelling correction
 setopt correct correctall
