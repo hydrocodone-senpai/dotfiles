@@ -19,8 +19,7 @@ bindkey '' backward-kill-line
 
 # fuzzy tab completion for nested directories
 compinit
-setopt noautomenu
-unsetopt nomatch
+zstyle ':completion:*' menu select
 
 # auto-bracket clipboard input, auto-quote URLs
 zle -N bracketed-paste bracketed-paste-magic
