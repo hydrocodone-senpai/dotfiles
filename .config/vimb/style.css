@@ -2,6 +2,7 @@
 
 :root{
 	--bg: #101010;
+	--invert-bg: #efefef;
 	--body: #e0e0e0;
 	--header: #4674e8;
 	--link: #57bbc2;
@@ -65,8 +66,8 @@ tr, td {
 
 /* wikipedia inline equations inverted */
 img.mwe-math-fallback-image-inline {
-	filter: invert(1) !important;
-	background-color: white !important;
+	background-color: var(--invert-bg) !important;
+	-webkit-filter: invert(100%) !important;
 }
 
 /* searx results */
