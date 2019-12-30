@@ -7,4 +7,5 @@ unclutter &
 redshift &
 compton &
 dunst &
+ibus-daemon -drx &
 exec i3
