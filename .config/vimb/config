@@ -34,6 +34,7 @@ shortcut-add w=https://wikipedia.org/wiki/$0
 shortcut-add 4=https://4chan.org/$0
 shortcut-add aw=https://wiki.archlinux.org/index.php/$0
 shortcut-add az=https://azlyrics.com/lyrics/$0/$1.html
+shortcut-add genlib=https://libgen.is/search.php?req=$0
 
 shortcut-add m=https://mail.google.com/
 shortcut-add sync=http://127.0.0.1:8384
