@@ -58,8 +58,10 @@ set fileencodings=ucs-bom,utf8,prc
 set shellcmdflag=-ic
 map <leader>c :!compile <c-r>%<CR>
 
+"shortcut to jump to <++> tags
+inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
+
 "rmd shortcuts
-autocmd Filetype rmd inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
 autocmd FileType rmd inoremap :t ```{r,echo=FALSE}<Enter><++><-read.xlsx('figures/<++>.xlsx',namedRegion='<++>')<Enter>kable(<++>,caption='<++>',align='c',booktabs='T',escape='F',linesep="",col.names=<++>)<Space>%>%<Enter>kable_styling(latex_options=c('striped','HOLD_position'))<Enter>```<Enter><++><Esc>5ki
 autocmd FileType rmd inoremap :x \textrm{}<++><Esc>4hi
 autocmd FileType rmd inoremap :f \frac{<++>}{<++>}<++><Esc>Bi
@@ -73,7 +75,6 @@ autocmd Filetype rmd inoremap :h ---<Enter>title:<Space><++><Enter>author:<Space
 autocmd Filetype rmd inoremap :s \SI{<++>}{<++>}<++><Esc>Bi
 
 "html shortcuts
-autocmd Filetype html inoremap <Tab><Space> <Esc>/<++><Enter>"_c4l
 autocmd Filetype html inoremap :t <th><++></th><++><Esc>Bi
 
 "goyo configuration
