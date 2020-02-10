@@ -23,6 +23,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "appearance
 syntax on
 colorscheme wal
+hi Normal guibg=NONE ctermbg=NONE
 set showcmd
 set number number
 set number relativenumber
