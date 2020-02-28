@@ -32,9 +32,6 @@ zle -N self-insert url-quote-magic
 # enable directory stacks
 setopt autopushd pushdminus pushdignoredups pushdsilent pushdtohome
 
-# enable spelling correction
-setopt correct correctall
-
 # ignore repeated lines in history
 setopt histignoredups histignorespace
 
