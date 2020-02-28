@@ -1,3 +1,4 @@
+monitor_setup &
 xbindkeys &
 xmodmap ~/.xmodmaprc &
 xrdb ~/.Xresources &
