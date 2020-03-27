@@ -123,7 +123,7 @@ bindsym --release $mod+Print exec --no-startup-id scrot '%Y%m%d-%H%M%S.png' -e '
 
 # scratchpad
 for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] resize set 1200 800
 for_window [instance="dropdown"] move scratchpad
 exec --no-startup-id $term -n dropdown
 
