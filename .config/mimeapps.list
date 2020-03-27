@@ -372,3 +372,5 @@ x-scheme-handler/rtp=vlc.desktop;
 x-scheme-handler/rtsp=vlc.desktop;
 x-scheme-handler/steam=steam.desktop;
 x-scheme-handler/vnd.libreoffice.cmis=libreoffice-startcenter.desktop;
+x-scheme-handler/discord-482370205331226644=discord-482370205331226644.desktop
+x-scheme-handler/discord-505751038989434881=discord-505751038989434881.desktop
