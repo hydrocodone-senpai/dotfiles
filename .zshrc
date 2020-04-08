@@ -5,6 +5,8 @@
 
 # disable terminal pause
 ttyctl -f
+# stop suspending vim on stdout
+stty -tostop
 
 # vi-mode
 bindkey -v
