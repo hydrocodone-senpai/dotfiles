@@ -1,2 +1,2 @@
 cat /etc/banner
-fortune -sa
+fortune -s
