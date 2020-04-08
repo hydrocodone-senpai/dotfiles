@@ -1,17 +1,21 @@
 "hydrocodone's .vimrc
 
 "vundle
+set nocompatible
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'lervag/vimtex'
 
 call vundle#end()
 
-"disable vi compatibility
-set nocompatible
+"set shell
+set shell=/usr/bin/zsh\ -l
+
 
 "enable built-in fuzzy file search
 filetype plugin indent on
@@ -61,10 +65,6 @@ autocmd Filetype c set cindent
 set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
-
-"compiler script
-set shellcmdflag=-ic
-map <leader>c :!compile <c-r>%<CR>
 
 "goyo configuration
 let g:goyo_linenr=1
