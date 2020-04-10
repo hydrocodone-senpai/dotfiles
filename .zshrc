@@ -51,9 +51,9 @@ man() {
 }
 
 # safety aliases
-alias rm="rm -I"
-alias mv="mv -i"
-alias cp="cp -i"
+alias rm="rm -Iv"
+alias mv="mv -iv"
+alias cp="cp -iv"
 
 # command aliases
 alias p="sudo pacman"
