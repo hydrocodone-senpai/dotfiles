@@ -38,8 +38,6 @@ setopt autopushd pushdminus pushdignoredups pushdsilent pushdtohome
 setopt histignoredups histignorespace
 
 # format ls, grep, and man output
-alias ls="ls -1 -h -p --color=auto --group-directories-first"
-alias grep="grep -i --color=auto"
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
@@ -50,36 +48,12 @@ man() {
     command man "$@"
 }
 
-# safety aliases
-alias rm="rm -Iv"
-alias mv="mv -iv"
-alias cp="cp -iv"
-
-# command aliases
-alias p="sudo pacman"
-alias g="grep"
-alias lsl="ls -la"
-alias ka="killall"
-alias mkd="mkdir -pv"
-alias sys="systemctl"
-alias abcde="cd ~/Music && abcde -o flac -B"
-alias dict="sdcv"
-alias mnova="/opt/MestReNova/bin/MestReNova"
-alias dirs="dirs -v"
-
-# application aliases
-alias v="vim"
-alias sv="sudo vim"
-alias r="ranger"
-alias n="ncmpcpp -q"
-alias neofetch="clear && neofetch"
-alias yta="youtube-dl -x --audio-format wav"
-alias nmgui="nm-applet --no-agent"
-alias news="newsboat"
-
 # "read file" alias -- write into full script later
 alias rd="bbg xdg-open"
 alias rdf="rd \"\$(fzf)\""
+
+# source aliases
+source $HOME/.aliases
 
 # finally, print formatted prompt
 (cat ~/.cache/wal/sequences &)

@@ -1,0 +1,28 @@
+# safety aliases
+alias rm="rm -Iv"
+alias mv="mv -iv"
+alias cp="cp -iv"
+
+# default options
+alias ls="ls -1 -h -p --color=auto --group-directories-first"
+alias grep="grep -i --color=auto"
+
+# shortcuts
+alias p="sudo pacman"
+alias g="grep"
+alias lsl="ls -la"
+alias ka="killall"
+alias mkd="mkdir -pv"
+alias sys="systemctl"
+alias abcde="cd ~/Music && abcde -o flac -B"
+alias dict="sdcv"
+alias mnova="/opt/MestReNova/bin/MestReNova"
+alias dirs="dirs -v"
+alias v="vim"
+alias sv="sudo vim"
+alias r="ranger"
+alias n="ncmpcpp -q"
+alias neofetch="clear && neofetch"
+alias yta="youtube-dl -x --audio-format wav"
+alias nmgui="nm-applet --no-agent"
+alias news="newsboat"

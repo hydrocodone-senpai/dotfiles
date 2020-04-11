@@ -11,8 +11,6 @@ set -o vi # vi mode
 [[ $- != *i* ]] && return
 
 # Adds color to ls, grep, and less output
-alias ls="ls -h --color=auto --group-directories-first"
-alias grep="grep --color=auto"
 man() {
     LESS_TERMCAP_md=$'\e[01;31m' \
     LESS_TERMCAP_me=$'\e[0m' \
@@ -23,24 +21,10 @@ man() {
     command man "$@"
 }
 
-# Command aliases
-alias p="sudo pacman"
-alias lsl="ls -lah"
-alias ka="killall"
-alias mkd="mkdir -pv"
-alias abcde="cd ~/Music && abcde -o flac -B"
-
-alias ypush="yadm commit -a && yadm push"
-alias ypull="yadm clone https://github.com/hydrocodone-senpai/dotfiles -f && yadm status"
-
-# Application aliases
-alias v="vim"
-alias sv="sudo vim"
-alias r="ranger"
-alias n="ncmpcpp -q"
-alias neofetch="clear && neofetch"
-alias yt="youtube-viewer"
-alias yta="youtube-dl -x --audio-format wav"
+# source aliases and env variables
+if [ -f ~/.aliases ]; then
+	. ~/.aliases
+fi
 
 # Sets bash environment
 export PATH="$PATH:$HOME/.scripts/bin" # Set script path
