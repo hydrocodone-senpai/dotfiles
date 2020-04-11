@@ -22,9 +22,7 @@ man() {
 }
 
 # source aliases and env variables
-if [ -f ~/.aliases ]; then
-	. ~/.aliases
-fi
+. ~/.aliases
 
 # Sets bash environment
 export PATH="$PATH:$HOME/.scripts/bin" # Set script path
