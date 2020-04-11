@@ -1,9 +1,5 @@
 # ~/.bashrc
 
-# source ~/.shortcuts
-
-[ -f "$HOME/.shortcuts" ] && source "$HOME/.shortcuts"
-
 # bash features
 stty -ixon # Disable pausing in terminal
 HISTSIZE= HISTFILESIZE=  # Infinite history
@@ -46,7 +42,7 @@ alias neofetch="clear && neofetch"
 alias yt="youtube-viewer"
 alias yta="youtube-dl -x --audio-format wav"
 
-# Sets bash environment 
+# Sets bash environment
 export PATH="$PATH:$HOME/.scripts/bin" # Set script path
 export LESSHISTFILE="/dev/null" # Disables .lesshst log
 export HISTFILE="$HOME/.bhistory"
