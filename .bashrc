@@ -23,11 +23,7 @@ man() {
 
 # source aliases and env variables
 . ~/.aliases
-
-# Sets bash environment
-export PATH="$PATH:$HOME/.scripts/bin" # Set script path
-export LESSHISTFILE="/dev/null" # Disables .lesshst log
-export HISTFILE="$HOME/.bhistory"
+. ~/.env
 
 if [ "$EUID" -ne 0 ]
 	then export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 2)\]\W\[$(tput setaf 5)\] \\$ \[$(tput sgr0)\]"

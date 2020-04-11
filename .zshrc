@@ -52,8 +52,9 @@ man() {
 alias rd="bbg xdg-open"
 alias rdf="rd \"\$(fzf)\""
 
-# source aliases
+# source aliases and env variables
 source $HOME/.aliases
+source $HOME/.env
 
 # finally, print formatted prompt
 (cat ~/.cache/wal/sequences &)
