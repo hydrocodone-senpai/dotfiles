@@ -1,6 +1,6 @@
 keycode 65 = space underscore space
-clear Lock
-keycode 66 = Escape Caps_Lock
+! clear Lock
+! keycode 66 = Escape Caps_Lock
 
 ! bind numpad keys to function keys when numlock is off
 keycode  63 = KP_Multiply KP_Multiply KP_Multiply KP_Multiply KP_Multiply KP_Multiply XF86ClearGrab KP_Multiply KP_Multiply XF86ClearGrab
