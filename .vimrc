@@ -16,6 +16,11 @@ call vundle#end()
 "set shell
 set shell=/usr/bin/zsh\ -l
 
+"tmux support
+if exists('$TMUX')
+    autocmd BufEnter * call system("tmux rename-window '" . expand("%:t") . "'")
+    autocmd VimLeave * call system("tmux setw automatic-rename")
+endif
 
 "enable built-in fuzzy file search
 filetype plugin indent on
