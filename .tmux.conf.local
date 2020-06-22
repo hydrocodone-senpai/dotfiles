@@ -277,10 +277,13 @@ tmux_conf_copy_to_os_clipboard=true
 set -g history-limit 10000
 
 # prev/next window
-unbind l
 bind -n C-l next-window
 bind -n C-h previous-window
 bind C-l send-keys C-l \; run 'sleep 0.1' \; clear-history
+
+# up/down panes
+bind -n C-j select-pane -D
+bind -n C-k select-pane -U
 
 # create new window in current dir
 bind '"' split-window -c "#{pane_current_path}"
