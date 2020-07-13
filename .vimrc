@@ -1,17 +1,23 @@
-"hydrocodone's .vimrc
+" hydrocodone's .vimrc
 
-"vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+let hostname = substitute(system("hostname"), "\n", "", "")
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'dylanaraps/wal.vim'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'lervag/vimtex'
+" ==============================================================================
+" vundle: check whitelisted hostnames to see if plugins should be loaded
+" ==============================================================================
 
-call vundle#end()
+if (hostname ==# "ryz5")
+	filetype off
+	set nocompatible
+	set rtp+=~/.vim/bundle/Vundle.vim
+
+	call vundle#begin()
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'dylanaraps/wal.vim'
+	Plugin 'ycm-core/YouCompleteMe'
+	Plugin 'lervag/vimtex'
+	call vundle#end()
+endif
 
 "set shell
 set shell=/usr/bin/zsh\ -l
