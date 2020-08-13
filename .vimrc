@@ -18,6 +18,8 @@ if (hostname ==# "ryz5")
 	Plugin 'lervag/vimtex'
 	Plugin 'mattn/emmet-vim'
 	call vundle#end()
+
+	let g:tex_flavor="latex"
 endif
 
 "set shell
