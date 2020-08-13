@@ -16,6 +16,7 @@ if (hostname ==# "ryz5")
 	Plugin 'dylanaraps/wal.vim'
 	Plugin 'ycm-core/YouCompleteMe'
 	Plugin 'lervag/vimtex'
+	Plugin 'mattn/emmet-vim'
 	call vundle#end()
 endif
 
@@ -52,6 +53,8 @@ set number relativenumber
 set textwidth=80
 set formatoptions=roqnm
 set formatlistpat=^\\s*[0-9*]\\+[\\]:.)}\\t\ ]\\s*
+set tabstop=4
+set shiftwidth=4
 
 "undefine comment indicators to support indentation of bulleted lists in .(r)md files
 autocmd Filetype md,rmd set comments=
