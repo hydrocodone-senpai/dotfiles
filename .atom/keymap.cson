@@ -1,0 +1,3 @@
+'atom-workspace atom-text-editor':
+  'ctrl-l': 'pane:show-next-item'
+  'ctrl-h': 'pane:show-previous-item'
