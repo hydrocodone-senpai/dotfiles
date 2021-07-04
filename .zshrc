@@ -3,6 +3,13 @@
 # if not running interactively, don't do anything
 [ -z “$PS1” ] && return
 
+# source aliases
+source $HOME/.aliases
+
+# "read file" alias -- write into full script later
+alias rd="bbg xdg-open"
+alias rdf="rd \"\$(fzf)\""
+
 # disable terminal pause
 ttyctl -f
 # stop suspending vim on stdout
@@ -48,17 +55,10 @@ man() {
     command man "$@"
 }
 
-# "read file" alias -- write into full script later
-alias rd="bbg xdg-open"
-alias rdf="rd \"\$(fzf)\""
-
-# source aliases and env variables
-source $HOME/.aliases
-source $HOME/.env
-
 # finally, print formatted prompt
-(cat ~/.cache/wal/sequences &)
+cat ~/.cache/wal/sequences
 if [ "$EUID" -ne 0 ]
 	then export PS1="%B%F{blue}%n@%M%F{green} %3~ %F{magenta}%# %b%f"
 	else export PS1="%B[%F{magenta}ROOT@$(hostname | awk '{print toupper($0)}')%F{green} %3~%f] %# "
 fi
+
